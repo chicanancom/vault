@@ -34,7 +34,7 @@ while True:
             print("something changed")
 
             text = 'something changed'
-            base_url = f"https://api.telegram.org/bot6422096295:AAGvVKjNGh7t9UsDB73hG3kYg_YnSLzwj4k/sendMessage?chat_id=-4002102545&text={text}"
+            base_url = f"https://api.telegram.org/bot<bot_API>/sendMessage?chat_id=<chatid>&text={text}"
             requests.get(base_url)
 
             newHash = hashlib.sha224(urlopen(url).read()).hexdigest()
