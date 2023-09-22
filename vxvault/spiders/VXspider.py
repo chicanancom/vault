@@ -4,7 +4,7 @@ from scrapy_splash import SplashRequest
 
 
 def remove_items(lst, item):
-    return [x for x in lst if x not in item]
+    return
 
 
 class VxspiderSpider(scrapy.Spider):
@@ -21,7 +21,8 @@ class VxspiderSpider(scrapy.Spider):
 
     def parse(self, response):
         a = response.xpath("//tr//td//a/text()").getall()
-        b = remove_items(a, ["VT","PED"])
+        item = ["VT","PED"]
+        b = [x for x in a if x not in item]
         date = b[::3]
         md5 = b[1::3]
         ip = b[2::3]
@@ -32,6 +33,6 @@ class VxspiderSpider(scrapy.Spider):
                    'ip':i[2]}
 
 
-# process = CrawlerProcess()
-# process.crawl(VxspiderSpider)
-# process.start()
+process = CrawlerProcess()
+process.crawl(VxspiderSpider)
+process.start()
