@@ -8,7 +8,10 @@ Nhưng có thể export dữ liệu trực tiếp từ trang
 
 ![image](https://github.com/chicanancom/vault/assets/24654948/8a88a21a-c408-4c9d-a8bb-791fa99d6aac)
 
-Scrape mã md5 và địa chỉ ip bị cấm đối với dịch vụ nào đó
+Đối với vxvault sử dụng jscontent để tạo nội dung nên sẽ áp dụng splash request
+Đối vời blocklist hiện tìm được trường với lượng bản ghi nhiều nhất chỉ có ip
+
+Mã md5 và địa chỉ ip bị cấm đối với dịch vụ nào đó
 
 ![image](https://github.com/chicanancom/vault/assets/24654948/09faf219-3dac-4a91-92b9-622bbc6b5be7)
 
